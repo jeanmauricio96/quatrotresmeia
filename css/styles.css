@@ -10178,14 +10178,20 @@ h3 {
   padding-bottom: 6rem;
 }
 .masthead .masthead-heading {
-  font-size: 2.75rem;
-  line-height: 2.75rem;
+  font-size: 40px;
+  line-height: 3rem;
 }
 .masthead .masthead-subheading {
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
-  width: 15rem;
+  width: 35rem;
+  filter: brightness(50%)
+}
+
+
+.masthead-avatar:hover{
+  filter: brightness(100%)
 }
 
 @media (min-width: 992px) {
@@ -10195,10 +10201,17 @@ h3 {
   }
   .masthead .masthead-heading {
     font-size: 4rem;
-    line-height: 3.5rem;
+    line-height: 5rem;
   }
   .masthead .masthead-subheading {
     font-size: 1.5rem;
+  }
+}
+
+@media(max-width: 992px){
+  .masthead .masthead-avatar {
+    width: 20rem;
+    height: 150px;
   }
 }
 .portfolio .portfolio-item {
